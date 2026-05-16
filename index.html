@@ -108,59 +108,69 @@
           </div>
         </div>
 
-        <div class="bg-white border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] md:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] relative z-10 overflow-hidden">
-            <button id="publicationTrigger" class="w-full p-6 md:p-8 flex flex-col md:flex-row md:justify-between md:items-center text-center md:text-left hover:bg-yellow-200 border-b-4 border-black focus:outline-none focus:ring-4 focus:ring-yellow-400 focus:bg-yellow-200 transition-colors">
+        <!-- 2. NEW Interactive Publication Card (Clickable Accordion) -->
+        <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] relative z-10 overflow-hidden">
+            <!-- TRIGGER: The clickable header -->
+            <button id="publicationTrigger" class="w-full p-8 flex flex-col md:flex-row md:justify-between md:items-center text-center md:text-left hover:bg-yellow-200 border-b-4 border-black focus:outline-none focus:ring-4 focus:ring-yellow-400 focus:bg-yellow-200 transition-colors">
                 <div class="flex-grow">
-                    <div class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-3">
+                    <div class="flex flex-col md:flex-row items-center gap-3">
                         <span class="inline-block bg-pink-100 border-2 border-black p-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                            <svg width="24" height="24" class="md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Brutalist Book Icon -->
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 19.5V5a2 2 0 012-2h13.5M4 19.5A2.5 2.5 0 016.5 17H19.5M4 19.5v-2m16 2v-14.5a2 2 0 00-2-2h-3.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M9 7h6M9 11h6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
                             </svg>
                         </span>
-                        <h3 class="text-2xl md:text-3xl font-extrabold">Publication & Research</h3>
+                        <h3 class="text-3xl font-extrabold">Publication & Research</h3>
                     </div>
-                    <p class="text-base md:text-xl font-bold text-gray-700 mt-2 md:mt-1">Primary Author | Native MR Compositing on Meta Quest 3</p>
+                    <p class="text-xl font-bold text-gray-700 mt-2 md:mt-1">Primary Author | Native MR Compositing on Meta Quest 3</p>
                 </div>
                 
-                <svg id="publicationArrow" class="shrink-0 w-8 h-8 md:w-12 md:h-12 text-black transition-transform duration-300 mt-4 md:mt-0 self-center" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Interaction Icon (Rotating Arrow) -->
+                <svg id="publicationArrow" class="shrink-0 w-12 h-12 text-black transition-transform duration-300 mt-4 md:mt-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
             </button>
 
+            <!-- PANEL: Content hidden by default -->
             <div id="publicationContent" class="hidden overflow-hidden bg-[#fafafa]">
-              <div class="p-6 md:p-8 lg:p-12 border-b-4 border-black">
-                <div class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-10">
+              <div class="p-8 md:p-12 border-b-4 border-black">
+                <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
                   
-                  <div class="hidden sm:block shrink-0 bg-white w-40 h-56 md:w-48 md:h-64 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] md:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] p-4 md:p-6 relative group cursor-pointer overflow-hidden">
+                  <!-- Illustrative Paper Preview Box -->
+                  <div class="shrink-0 bg-white w-48 h-64 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] p-6 relative group cursor-pointer overflow-hidden">
                     <div class="w-full h-full bg-[#e0f7fa] rounded-lg border-2 border-black p-4 flex flex-col justify-between">
+                        <!-- Coded Brutalist Document and Tech Stack -->
                         <div class="space-y-2">
-                            <div class="h-2 md:h-3 bg-white border-2 border-black w-16 md:w-20"></div>
-                            <div class="h-2 md:h-3 bg-white border-2 border-black w-full"></div>
-                            <div class="h-2 md:h-3 bg-white border-2 border-black w-full"></div>
-                            <div class="h-2 md:h-3 bg-white border-2 border-black w-2/3"></div>
+                            <div class="h-3 bg-white border-2 border-black w-20"></div>
+                            <div class="h-3 bg-white border-2 border-black w-full"></div>
+                            <div class="h-3 bg-white border-2 border-black w-full"></div>
+                            <div class="h-3 bg-white border-2 border-black w-2/3"></div>
                         </div>
                         <div class="flex gap-1 justify-end">
-                            <div class="w-4 h-4 md:w-5 md:h-5 bg-yellow-200 border-2 border-black rounded-sm"></div>
-                            <div class="w-4 h-4 md:w-5 md:h-5 bg-emerald-200 border-2 border-black rounded-sm"></div>
+                            <div class="w-5 h-5 bg-yellow-200 border-2 border-black rounded-sm"></div>
+                            <div class="w-5 h-5 bg-emerald-200 border-2 border-black rounded-sm"></div>
                         </div>
                     </div>
                   </div>
 
+                  <!-- Paper Description and Action Button -->
                   <div class="flex-grow text-center md:text-left">
-                    <h4 class="text-xl md:text-2xl font-extrabold mb-3 leading-snug">Native Mixed Reality Compositing on Meta Quest 3: A Quantitative Feasibility Study of ARM-Based SoCs and Thermal Headroom</h4>
-                    <p class="text-base md:text-xl font-medium mb-1">Status: Published Preprint (arXiv)</p>
-                    <p class="text-sm md:text-xl font-medium mb-6 md:mb-8">Authors: Muhammad Kaif Laghari, Areeb Ahmed Shaikh, Faiz Khan, Aafia Gul Siddiqui</p>
+                    <h4 class="text-2xl font-extrabold mb-3 leading-snug">Native Mixed Reality Compositing on Meta Quest 3: A Quantitative Feasibility Study of ARM-Based SoCs and Thermal Headroom</h4>
+                    <p class="text-xl font-medium mb-1">Status: Published Preprint (arXiv)</p>
+                    <p class="text-xl font-medium mb-8">Authors: Muhammad Kaif Laghari, Areeb Ahmed Shaikh, Faiz Khan, Aafia Gul Siddiqui</p>
                     
-                    <p class="text-base md:text-lg font-medium text-gray-800 leading-relaxed max-w-2xl mx-auto md:mx-0">
+                    <p class="text-lg font-medium text-gray-800 leading-relaxed max-w-2xl mx-auto md:mx-0">
                       This study investigates the feasibility of executing an enhanced MR compositing pipeline natively on the Meta Quest 3 without external PC dependencies. By benchmarking the Snapdragon XR2 Gen 2 against next-generation SoCs, the research demonstrates that current standalone hardware can support 720p30 lightweight compositing at 95% resource utilization, while identifying thermal constraints that limit sustained recording to 5-10 minutes.
                     </p>
 
-                    <div class="mt-8 md:mt-10">
-                      <a href="Native_Mixed_Reality_Compositing_Quest_3.pdf" target="_blank" class="inline-block scale-95 hover:scale-105 md:hover:scale-110 hover:shadow-lg hover:bg-yellow-300 bg-[#fafafa] px-6 py-3 md:px-8 md:py-3 rounded transition-all border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] md:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group">
-                        <span class="text-lg md:text-xl font-black uppercase tracking-wide flex items-center justify-center gap-2 md:gap-3">
+                    <!-- Call to Action Button (Brutalist style) -->
+                    <div class="mt-10">
+                      <!-- UPDATE THIS HREF: Ensure your PDF file is in the same folder and the name matches exactly -->
+                      <a href="Native_Mixed_Reality_Compositing_Quest_3.pdf" target="_blank" class="inline-block scale-95 hover:scale-110 hover:shadow-lg hover:bg-yellow-300 bg-[#fafafa] px-8 py-3 rounded transition-all border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group">
+                        <span class="text-xl font-black uppercase tracking-wide flex items-center gap-3">
                             Read Full Paper
-                            <svg class="w-5 h-5 md:w-6 md:h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
+                            <svg class="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
                         </span>
                       </a>
                     </div>
