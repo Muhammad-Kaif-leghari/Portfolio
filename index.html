@@ -3,49 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cloud & Ops Portfolio</title>
+  <title>Muhammad Kaif Portfolio</title>
   <link href="./output.css" rel="stylesheet">
 </head>
 <body class="bg-brutal-bg text-black font-sans min-h-screen relative overflow-x-hidden">
 
-  <!-- Navigation -->
-  <nav class="flex justify-between items-center p-8 border-b-4 border-black bg-[#fdfaf2] relative z-50">
-    <div class="font-bold text-2xl border-2 border-black px-4 py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] bg-white">
+  <nav class="flex justify-between items-center p-6 md:p-8 border-b-4 border-black bg-[#fdfaf2] relative z-50">
+    <div class="font-bold text-xl md:text-2xl border-2 border-black px-4 py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] bg-white">
       ✦ Muhammad Kaif
     </div>
+    
     <div class="space-x-6 font-semibold hidden md:block">
       <a href="#about" class="inline-block scale-95 hover:scale-110 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-transparent hover:border-black hover:bg-yellow-300 px-6 py-2 rounded transition-all">About</a>
       <a href="#skills" class="inline-block scale-95 hover:scale-110 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-transparent hover:border-black hover:bg-yellow-300 px-6 py-2 rounded transition-all">My Skills</a>
       <a href="#projects" class="inline-block scale-95 hover:scale-110 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-transparent hover:border-black hover:bg-yellow-300 px-6 py-2 rounded transition-all">Projects</a>
       <a href="#contact" class="inline-block scale-95 hover:scale-110 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-transparent hover:border-black hover:bg-yellow-300 px-6 py-2 rounded transition-all">Contact Me</a>
     </div>
+
+    <button id="mobileMenuBtn" class="md:hidden border-2 border-black p-2 bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:bg-yellow-200 transition-colors focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
   </nav>
 
-<main class="p-12 flex flex-col lg:flex-row justify-center lg:justify-between items-center mt-10 max-w-7xl mx-auto gap-12 relative">
+  <div id="mobileMenu" class="hidden md:hidden border-b-4 border-black bg-[#fdfaf2] flex flex-col font-semibold p-4 gap-2 absolute w-full z-40 shadow-[0px_8px_0px_0px_rgba(0,0,0,1)]">
+    <a href="#about" class="mobile-link block border-2 border-transparent hover:border-black hover:bg-yellow-300 px-4 py-3 rounded transition-all">About</a>
+    <a href="#skills" class="mobile-link block border-2 border-transparent hover:border-black hover:bg-yellow-300 px-4 py-3 rounded transition-all">My Skills</a>
+    <a href="#projects" class="mobile-link block border-2 border-transparent hover:border-black hover:bg-yellow-300 px-4 py-3 rounded transition-all">Projects</a>
+    <a href="#contact" class="mobile-link block border-2 border-transparent hover:border-black hover:bg-yellow-300 px-4 py-3 rounded transition-all">Contact Me</a>
+  </div>
+
+  <main class="px-6 py-10 md:p-12 flex flex-col lg:flex-row justify-center lg:justify-between items-center mt-4 md:mt-10 max-w-7xl mx-auto gap-12 relative">
     
-    <img src="stars.png" alt="Sparkles" class="absolute -top-10 -left-4 w-20 md:w-24 hidden md:block opacity-90 pointer-events-none">
+    <img src="stars.png" alt="Sparkles" class="absolute -top-10 -left-6 md:-top-12 md:-left-8 w-16 md:w-24 hidden md:block opacity-90 pointer-events-none">
 
     <div class="max-w-2xl z-10 w-full flex flex-col">
       
-      <h1 class="font-extrabold leading-tight mb-4 flex flex-col items-start gap-4">
-        <span class="text-4xl md:text-5xl mb-2">I specialize in</span>
+      <h1 class="font-extrabold leading-tight mb-4 flex flex-col items-start gap-3 md:gap-4">
+        <span class="text-3xl sm:text-4xl md:text-5xl mb-1 md:mb-2">I specialize in</span>
         
-        <span class="text-4xl md:text-5xl bg-yellow-200 -rotate-2 inline-block px-6 py-2 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] mt-2 whitespace-nowrap">
+        <span class="text-3xl sm:text-4xl md:text-5xl bg-yellow-200 -rotate-2 inline-block px-4 md:px-6 py-2 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] md:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] mt-2 whitespace-nowrap">
           Cloud Infrastructure
         </span> 
         
-        <div class="flex items-center gap-3 md:ml-8 mt-4">
-          <span class="text-2xl md:text-3xl font-black bg-white border-4 border-black px-4 py-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rotate-3">
+        <div class="flex items-center gap-2 md:gap-3 ml-2 md:ml-8 mt-2 md:mt-4">
+          <span class="text-xl sm:text-2xl md:text-3xl font-black bg-white border-4 border-black px-3 py-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rotate-3">
             &
           </span>
-          <span class="text-4xl md:text-5xl bg-pink-200 rotate-1 inline-block px-6 py-2 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] whitespace-nowrap">
+          <span class="text-3xl sm:text-4xl md:text-5xl bg-pink-200 rotate-1 inline-block px-4 md:px-6 py-2 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] md:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] whitespace-nowrap">
             Quality Assurance
           </span>
         </div>
       </h1>
 
-      <div class="mt-10 border-l-8 border-black pl-6 py-2">
-        <p class="text-lg md:text-xl font-bold text-gray-800 leading-relaxed max-w-xl">
+      <div class="mt-8 md:mt-10 border-l-4 md:border-l-8 border-black pl-4 md:pl-6 py-2">
+        <p class="text-base sm:text-lg md:text-xl font-bold text-gray-800 leading-relaxed max-w-xl">
           Bridging the gap between deployment and reliability with expertise in 
           <span class="inline-block bg-[#a2f5d6] border-2 border-black px-2 py-0.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-1 mx-1 mt-1">AWS</span>, 
           <span class="inline-block bg-blue-200 border-2 border-black px-2 py-0.5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] rotate-1 mx-1 mt-1">CI/CD</span>, and 
@@ -55,102 +68,86 @@
 
     </div>
     
-    <div class="relative mt-16 lg:mt-0 w-80 h-80 min-w-[20rem]">
+    <div class="relative mt-12 lg:mt-0 w-64 h-64 sm:w-80 sm:h-80 min-w-[16rem] sm:min-w-[20rem]">
       
-      <img src="light red.png" alt="Radiating Lines Top" class="absolute -top-20 -left-20 w-48 z-0 pointer-events-none">
+      <img src="light red.png" alt="Radiating Lines Top" class="absolute -top-12 -left-12 sm:-top-20 sm:-left-20 w-32 sm:w-48 z-0 pointer-events-none">
 
-      <img src="gray.png" alt="Radiating Lines Bottom" class="absolute -bottom-16 -right-16 w-48 z-0 pointer-events-none">
+      <img src="gray.png" alt="Radiating Lines Bottom" class="absolute -bottom-10 -right-10 sm:-bottom-16 sm:-right-16 w-32 sm:w-48 z-0 pointer-events-none">
 
-      <div class="w-full h-full bg-white border-4 border-black rounded-[2rem] relative shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-2 flex items-center justify-center z-10">
-        <img src="pfp_image.png" alt="Muhammad Kaif" class="w-full h-full object-cover rounded-[1.5rem]">
+      <div class="w-full h-full bg-white border-4 border-black rounded-[1.5rem] sm:rounded-[2rem] relative shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-2 flex items-center justify-center z-10">
+        <img src="pfp_image.png" alt="Muhammad Kaif" class="w-full h-full object-cover rounded-[1rem] sm:rounded-[1.5rem]">
       </div>
 
-      <img src="noise-yellow.png" alt="Decorative purple wave" class="absolute -bottom-6 -left-6 w-16 h-auto z-20 pointer-events-none">
+      <img src="noise-yellow.png" alt="Decorative purple wave" class="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 w-12 sm:w-16 h-auto z-20 pointer-events-none">
 
-      <img src="spark new.png" alt="Sparkling Stars" class="absolute -bottom-4 -right-10 w-32 md:w-40 z-20 pointer-events-none">
+      <img src="spark new.png" alt="Sparkling Stars" class="absolute -bottom-2 -right-6 sm:-bottom-4 sm:-right-10 w-24 sm:w-32 md:w-40 z-20 pointer-events-none">
       
     </div>
   </main>
 
-  <!-- Spacer -->
-  <div class="h-24 w-full border-t-4 border-black my-16"></div>
-  <!-- About Section -->
-  <section id="about" class="p-12 max-w-7xl mx-auto relative mt-16">
+  <div class="h-16 md:h-24 w-full border-t-4 border-black my-12 md:my-16"></div>
+  
+  <section id="about" class="px-6 py-10 md:p-12 max-w-7xl mx-auto relative mt-8 md:mt-16">
     
-    <!-- Top Right Pink Flower -->
     <img src="Vector-circle1.png" alt="Flower Decoration" class="absolute -top-12 right-4 md:right-12 w-12 md:w-16 z-0 pointer-events-none">
 
-    <!-- About Me Header -->
-    <div class="mb-12 relative inline-block mt-12">
-      <!-- Top Left Pink Star -->
-      <img src="Vector-1 star.png" alt="Pink Star" class="absolute -top-16 -left-12 md:-top-20 md:-left-16 w-12 md:w-16 pointer-events-none">
+    <div class="mb-10 md:mb-12 relative inline-block mt-8 md:mt-12">
+      <img src="Vector-1 star.png" alt="Pink Star" class="absolute -top-12 -left-8 md:-top-20 md:-left-16 w-10 md:w-16 pointer-events-none">
       
-      <h2 class="text-4xl md:text-5xl font-black uppercase inline-block bg-pink-200 border-4 border-black px-6 py-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] -rotate-2 relative z-10">ABOUT ME</h2>
+      <h2 class="text-3xl md:text-5xl font-black uppercase inline-block bg-pink-200 border-4 border-black px-6 py-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] -rotate-2 relative z-10">ABOUT ME</h2>
     </div>
 
-    <!-- Container for About Me Cards (Education and Interactive Publication) -->
-    <div class="flex flex-col gap-10">
+    <div class="flex flex-col gap-8 md:gap-10">
 
-        <!-- 1. Education Details Card -->
-        <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-8 md:p-12 flex flex-col md:flex-row items-center md:items-center gap-10 relative z-10">
+        <div class="bg-white border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] md:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-6 md:p-12 flex flex-col md:flex-row items-center gap-6 md:gap-10 relative z-10">
           
-          <!-- University Logo Box -->
-          <div class="shrink-0 bg-white w-40 h-40 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center p-2 -rotate-3 hover:rotate-0 transition-transform cursor-pointer">
+          <div class="shrink-0 bg-white w-32 h-32 md:w-40 md:h-40 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] md:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center p-2 -rotate-3 hover:rotate-0 transition-transform cursor-pointer">
             <div class="w-full h-full bg-[#f3f4f6] rounded-lg flex items-center justify-center overflow-hidden p-2">
               <img src="szabist.jpg" alt="SZABIST Logo" class="w-full h-full object-contain mix-blend-multiply">
             </div>
           </div>
 
-          <!-- Education Text -->
           <div class="flex-grow text-center md:text-left">
-            <h3 class="text-3xl md:text-4xl font-extrabold mb-2">Bachelor of Science in Software Engineering</h3>
-            <p class="text-xl font-bold text-gray-600 mb-6">SZABIST Hyderabad</p>
+            <h3 class="text-2xl md:text-4xl font-extrabold mb-2">Bachelor of Science in Software Engineering</h3>
+            <p class="text-lg md:text-xl font-bold text-gray-600 mb-6">SZABIST Hyderabad</p>
             
-            <!-- Badges -->
-            <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-4">
-              <div class="bg-[#a2c2f5] border-4 border-black px-4 py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                <span class="font-black uppercase tracking-wider text-sm">GRADUATING: MAY 2026</span>
+            <div class="flex flex-wrap justify-center md:justify-start gap-3 md:gap-4 mt-4">
+              <div class="bg-[#a2c2f5] border-4 border-black px-3 py-2 md:px-4 md:py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <span class="font-black uppercase tracking-wider text-xs md:text-sm">GRADUATING: MAY 2026</span>
               </div>
-              <div class="bg-yellow-200 border-4 border-black px-4 py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                <span class="font-black uppercase tracking-wider text-sm">CGPA: 3.46</span>
+              <div class="bg-yellow-200 border-4 border-black px-3 py-2 md:px-4 md:py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <span class="font-black uppercase tracking-wider text-xs md:text-sm">CGPA: 3.46</span>
               </div>
             </div>
           </div>
         </div>
 
- <!-- 2. NEW Interactive Publication Card (Clickable Accordion) -->
-        <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] relative z-10 overflow-hidden">
-            <!-- TRIGGER: The clickable header -->
-            <button id="publicationTrigger" class="w-full p-8 flex flex-col md:flex-row md:justify-between md:items-center text-center md:text-left hover:bg-yellow-200 border-b-4 border-black focus:outline-none focus:ring-4 focus:ring-yellow-400 focus:bg-yellow-200 transition-colors">
+        <div class="bg-white border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] md:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] relative z-10 overflow-hidden">
+            <button id="publicationTrigger" class="w-full p-6 md:p-8 flex flex-col md:flex-row md:justify-between md:items-center text-center md:text-left hover:bg-yellow-200 border-b-4 border-black focus:outline-none focus:ring-4 focus:ring-yellow-400 focus:bg-yellow-200 transition-colors">
                 <div class="flex-grow">
-                    <div class="flex flex-col md:flex-row items-center gap-3">
+                    <div class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-3">
                         <span class="inline-block bg-pink-100 border-2 border-black p-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                            <!-- Brutalist Book Icon -->
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="24" height="24" class="md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 19.5V5a2 2 0 012-2h13.5M4 19.5A2.5 2.5 0 016.5 17H19.5M4 19.5v-2m16 2v-14.5a2 2 0 00-2-2h-3.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M9 7h6M9 11h6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
                             </svg>
                         </span>
-                        <h3 class="text-3xl font-extrabold">Publication & Research</h3>
+                        <h3 class="text-2xl md:text-3xl font-extrabold">Publication & Research</h3>
                     </div>
-                    <p class="text-xl font-bold text-gray-700 mt-2 md:mt-1">Primary Author | Native MR Compositing on Meta Quest 3</p>
+                    <p class="text-base md:text-xl font-bold text-gray-700 mt-3 md:mt-1">Primary Author | Native MR Compositing on Meta Quest 3</p>
                 </div>
                 
-                <!-- Interaction Icon (Rotating Arrow) -->
-                <svg id="publicationArrow" class="shrink-0 w-12 h-12 text-black transition-transform duration-300 mt-4 md:mt-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg id="publicationArrow" class="shrink-0 w-8 h-8 md:w-12 md:h-12 text-black transition-transform duration-300 mt-4 md:mt-0 self-center" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
             </button>
 
-            <!-- PANEL: Content hidden by default -->
             <div id="publicationContent" class="hidden overflow-hidden bg-[#fafafa]">
-              <div class="p-8 md:p-12 border-b-4 border-black">
-                <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
+              <div class="p-6 md:p-12 border-b-4 border-black">
+                <div class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-10">
                   
-                  <!-- Illustrative Paper Preview Box -->
-                  <div class="shrink-0 bg-white w-48 h-64 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] p-6 relative group cursor-pointer overflow-hidden">
+                  <div class="hidden sm:block shrink-0 bg-white w-48 h-64 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] p-6 relative group cursor-pointer overflow-hidden">
                     <div class="w-full h-full bg-[#e0f7fa] rounded-lg border-2 border-black p-4 flex flex-col justify-between">
-                        <!-- Coded Brutalist Document and Tech Stack -->
                         <div class="space-y-2">
                             <div class="h-3 bg-white border-2 border-black w-20"></div>
                             <div class="h-3 bg-white border-2 border-black w-full"></div>
@@ -164,23 +161,20 @@
                     </div>
                   </div>
 
-                  <!-- Paper Description and Action Button -->
                   <div class="flex-grow text-center md:text-left">
-                    <h4 class="text-2xl font-extrabold mb-3 leading-snug">Native Mixed Reality Compositing on Meta Quest 3: A Quantitative Feasibility Study of ARM-Based SoCs and Thermal Headroom</h4>
-                    <p class="text-xl font-medium mb-1">Status: Published Preprint (arXiv)</p>
-                    <p class="text-xl font-medium mb-8">Authors: Muhammad Kaif Laghari, Areeb Ahmed Shaikh, Faiz Khan, Aafia Gul Siddiqui</p>
+                    <h4 class="text-xl md:text-2xl font-extrabold mb-3 leading-snug">Native Mixed Reality Compositing on Meta Quest 3: A Quantitative Feasibility Study of ARM-Based SoCs and Thermal Headroom</h4>
+                    <p class="text-base md:text-xl font-medium mb-1">Status: Published Preprint (arXiv)</p>
+                    <p class="text-sm md:text-xl font-medium mb-6 md:mb-8 text-gray-700">Authors: Muhammad Kaif Laghari, Areeb Ahmed Shaikh, Faiz Khan, Aafia Gul Siddiqui</p>
                     
-                    <p class="text-lg font-medium text-gray-800 leading-relaxed max-w-2xl mx-auto md:mx-0">
+                    <p class="text-base md:text-lg font-medium text-gray-800 leading-relaxed max-w-2xl mx-auto md:mx-0">
                       This study investigates the feasibility of executing an enhanced MR compositing pipeline natively on the Meta Quest 3 without external PC dependencies. By benchmarking the Snapdragon XR2 Gen 2 against next-generation SoCs, the research demonstrates that current standalone hardware can support 720p30 lightweight compositing at 95% resource utilization, while identifying thermal constraints that limit sustained recording to 5-10 minutes.
                     </p>
 
-                    <!-- Call to Action Button (Brutalist style) -->
-                    <div class="mt-10">
-                      <!-- UPDATE THIS HREF: Ensure your PDF file is in the same folder and the name matches exactly -->
-                      <a href="Native_Mixed_Reality_Compositing_Quest_3.pdf" target="_blank" class="inline-block scale-95 hover:scale-110 hover:shadow-lg hover:bg-yellow-300 bg-[#fafafa] px-8 py-3 rounded transition-all border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group">
-                        <span class="text-xl font-black uppercase tracking-wide flex items-center gap-3">
+                    <div class="mt-8 md:mt-10">
+                      <a href="Native_Mixed_Reality_Compositing_Quest_3.pdf" target="_blank" class="inline-block scale-95 hover:scale-105 md:hover:scale-110 hover:shadow-lg hover:bg-yellow-300 bg-[#fafafa] px-6 py-3 md:px-8 md:py-3 rounded transition-all border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] md:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group">
+                        <span class="text-lg md:text-xl font-black uppercase tracking-wide flex items-center gap-3">
                             Read Full Paper
-                            <svg class="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
+                            <svg class="w-5 h-5 md:w-6 md:h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
                         </span>
                       </a>
                     </div>
@@ -194,84 +188,83 @@
     </div>
   </section>
 
-  <!-- Spacer -->
-  <div class="h-24 w-full border-t-4 border-black my-16"></div>
+  <div class="h-16 md:h-24 w-full border-t-4 border-black my-12 md:my-16"></div>
 
-<section id="projects" class="p-12 max-w-7xl mx-auto relative mt-16">
+  <section id="projects" class="px-6 py-10 md:p-12 max-w-7xl mx-auto relative mt-8 md:mt-16">
     
-    <img src="Vector-circle2.png" alt="Flower Decoration" class="absolute -top-8 left-4 md:left-12 w-16 md:w-24 z-0 pointer-events-none">
+    <img src="Vector-circle2.png" alt="Flower Decoration" class="absolute -top-8 left-4 md:left-12 w-12 md:w-24 z-0 pointer-events-none">
 
-    <div class="mb-16 flex justify-end relative mt-20">
+    <div class="mb-10 md:mb-16 flex justify-end relative mt-12 md:mt-20">
       <div class="relative inline-block">
-        <img src="Vector-2 star.png" alt="Green Star" class="absolute -top-20 -right-16 md:-top-24 md:-right-20 w-20 md:w-28 z-0 pointer-events-none">
+        <img src="Vector-2 star.png" alt="Green Star" class="absolute -top-16 -right-10 md:-top-24 md:-right-20 w-16 md:w-28 z-0 pointer-events-none">
         
-        <h2 class="text-4xl md:text-5xl font-black uppercase inline-block bg-[#a2f5d6] border-4 border-black px-6 py-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-2 relative z-10">MY PROJECTS</h2>
+        <h2 class="text-3xl md:text-5xl font-black uppercase inline-block bg-[#a2f5d6] border-4 border-black px-6 py-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-2 relative z-10">MY PROJECTS</h2>
       </div>
     </div>
 
     <div class="mb-8 relative z-10">
-      <h3 class="text-2xl md:text-3xl font-black uppercase tracking-wider bg-blue-200 border-4 border-black px-6 py-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] -rotate-1 inline-block mb-10">
+      <h3 class="text-xl md:text-3xl font-black uppercase tracking-wider bg-blue-200 border-4 border-black px-4 md:px-6 py-2 md:py-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] -rotate-1 inline-block mb-8 md:mb-10">
         ☁️ Cloud & Ops
       </h3>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
         
-        <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all flex flex-col group cursor-pointer">
-          <div class="h-56 bg-blue-100 border-b-4 border-black overflow-hidden flex items-center justify-center p-4 relative">
+        <div class="bg-white border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] md:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] md:hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all flex flex-col group cursor-pointer">
+          <div class="h-48 md:h-56 bg-blue-100 border-b-4 border-black overflow-hidden flex items-center justify-center p-4 relative">
              <img src="Pipeline Architecture.png" alt="Pipeline Architecture" class="h-full object-contain group-hover:scale-110 transition-transform">
           </div>
           
-          <div class="p-8 flex flex-col flex-grow">
-            <h4 class="text-2xl font-extrabold mb-4 bg-white inline-block px-2 border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] self-start">Automated CI/CD Pipeline</h4>
-            <p class="text-lg font-medium mb-6 flex-grow text-gray-700">
+          <div class="p-6 md:p-8 flex flex-col flex-grow">
+            <h4 class="text-xl md:text-2xl font-extrabold mb-4 bg-white inline-block px-2 border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] self-start">Automated CI/CD Pipeline</h4>
+            <p class="text-base md:text-lg font-medium mb-6 flex-grow text-gray-700">
               Built an end-to-end CI/CD pipeline utilizing GitHub Actions and AWS CodeDeploy. Automated Docker image creation and integrated secure, zero-downtime deployments to EC2 instances using S3 for build artifacts.
             </p>
             
             <div class="mb-8 mt-auto">
-              <a href="https://github.com/Muhammad-Kaif-leghari/Automated-CI-CD-with-AWS-CodeDeploy-GitHub-Actions" target="_blank" class="font-bold text-sm bg-[#fef08a] hover:bg-black hover:text-white transition-colors border-2 border-black px-4 py-2 inline-flex items-center gap-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              <a href="https://github.com/Muhammad-Kaif-leghari/Automated-CI-CD-with-AWS-CodeDeploy-GitHub-Actions" target="_blank" class="font-bold text-xs md:text-sm bg-[#fef08a] hover:bg-black hover:text-white transition-colors border-2 border-black px-3 py-2 md:px-4 md:py-2 inline-flex items-center gap-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]">
+                <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
                 View Source Code
               </a>
             </div>
 
-            <div class="border-t-4 border-black pt-4 flex items-center justify-between">
-              <span class="font-black uppercase tracking-widest text-sm">BUILT WITH:</span>
-              <div class="flex gap-2">
-                <img src="Flask.png" alt="Flask" class="w-10 h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                <img src="Github (1).png" alt="github" class="w-10 h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                <img src="GitHub Actions.png" alt="github actions" class="w-10 h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                <img src="Docker.png" alt="Docker" class="w-10 h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                <img src="S3 Bucket.png" alt="S3" class="w-10 h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                <img src="CodeDeploy.png" alt="CodeDeploy" class="w-10 h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                <img src="EC2.png" alt="EC2" class="w-10 h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+            <div class="border-t-4 border-black pt-4 flex flex-col md:flex-row md:items-center justify-between gap-2">
+              <span class="font-black uppercase tracking-widest text-xs md:text-sm">BUILT WITH:</span>
+              <div class="flex flex-wrap gap-2">
+                <img src="Flask.png" alt="Flask" class="w-8 h-8 md:w-10 md:h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                <img src="Github (1).png" alt="github" class="w-8 h-8 md:w-10 md:h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                <img src="GitHub Actions.png" alt="github actions" class="w-8 h-8 md:w-10 md:h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                <img src="Docker.png" alt="Docker" class="w-8 h-8 md:w-10 md:h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                <img src="S3 Bucket.png" alt="S3" class="w-8 h-8 md:w-10 md:h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                <img src="CodeDeploy.png" alt="CodeDeploy" class="w-8 h-8 md:w-10 md:h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                <img src="EC2.png" alt="EC2" class="w-8 h-8 md:w-10 md:h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
               </div>
             </div>
           </div>
         </div>
 
-        <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all flex flex-col group cursor-pointer">
-          <div class="h-56 bg-orange-100 border-b-4 border-black overflow-hidden flex items-center justify-center p-4 relative">
+        <div class="bg-white border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] md:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] md:hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all flex flex-col group cursor-pointer">
+          <div class="h-48 md:h-56 bg-orange-100 border-b-4 border-black overflow-hidden flex items-center justify-center p-4 relative">
             <img src="AWS Infrastructure.gif" alt="AWS Infrastructure" class="h-full object-contain group-hover:scale-110 transition-transform">
           </div>
           
-          <div class="p-8 flex flex-col flex-grow">
-            <h4 class="text-2xl font-extrabold mb-4 bg-white inline-block px-2 border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] self-start">High-Availability AWS Infra</h4>
-            <p class="text-lg font-medium mb-6 flex-grow text-gray-700">
+          <div class="p-6 md:p-8 flex flex-col flex-grow">
+            <h4 class="text-xl md:text-2xl font-extrabold mb-4 bg-white inline-block px-2 border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] self-start">High-Availability AWS Infra</h4>
+            <p class="text-base md:text-lg font-medium mb-6 flex-grow text-gray-700">
               Implemented AWS Application Load Balancers (ALB) to distribute incoming traffic across multiple EC2 instances based on routing rules. Applied auto-scaling policies to dynamically adjust capacity, improving performance and reducing latency.
             </p>
             
             <div class="mb-8 mt-auto">
-              <a href="Optimizing Web App High Availability with AWS EC2 and ALB.pdf" target="_blank" class="font-bold text-sm bg-[#fbcfe8] hover:bg-black hover:text-white transition-colors border-2 border-black px-4 py-2 inline-flex items-center gap-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+              <a href="Optimizing Web App High Availability with AWS EC2 and ALB.pdf" target="_blank" class="font-bold text-xs md:text-sm bg-[#fbcfe8] hover:bg-black hover:text-white transition-colors border-2 border-black px-3 py-2 md:px-4 md:py-2 inline-flex items-center gap-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]">
+                <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                 View Documentation
               </a>
             </div>
 
-            <div class="border-t-4 border-black pt-4 flex items-center justify-between">
-              <span class="font-black uppercase tracking-widest text-sm">BUILT WITH:</span>
-              <div class="flex gap-2">
-                <img src="aws.png" alt="AWS" class="w-10 h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                <img src="EC2.png" alt="EC2" class="w-10 h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+            <div class="border-t-4 border-black pt-4 flex flex-col md:flex-row md:items-center justify-between gap-2">
+              <span class="font-black uppercase tracking-widest text-xs md:text-sm">BUILT WITH:</span>
+              <div class="flex flex-wrap gap-2">
+                <img src="aws.png" alt="AWS" class="w-8 h-8 md:w-10 md:h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                <img src="EC2.png" alt="EC2" class="w-8 h-8 md:w-10 md:h-10 object-contain p-1 border-2 border-black bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
               </div>
             </div>
           </div>
@@ -280,22 +273,22 @@
       </div>
     </div>
 
-    <div class="w-full border-t-8 border-dashed border-gray-400 my-20 relative flex justify-center">
-        <div class="absolute -top-5 bg-brutal-bg px-4">
-            <svg class="w-8 h-8 text-black -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z"></path></svg>
+    <div class="w-full border-t-4 md:border-t-8 border-dashed border-gray-400 my-16 md:my-20 relative flex justify-center">
+        <div class="absolute -top-4 md:-top-5 bg-brutal-bg px-4">
+            <svg class="w-6 h-6 md:w-8 md:h-8 text-black -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z"></path></svg>
         </div>
     </div>
 
     <div class="relative z-10">
-      <h3 class="text-2xl md:text-3xl font-black uppercase tracking-wider bg-pink-200 border-4 border-black px-6 py-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rotate-1 inline-block mb-10">
+      <h3 class="text-xl md:text-3xl font-black uppercase tracking-wider bg-pink-200 border-4 border-black px-4 md:px-6 py-2 md:py-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rotate-1 inline-block mb-8 md:mb-10">
         🐛 SQA & Manual Testing
       </h3>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         
-        <div class="col-span-1 md:col-span-2 bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all flex flex-col md:flex-row group cursor-default">
+        <div class="col-span-1 md:col-span-2 bg-white border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] md:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all flex flex-col md:flex-row group cursor-default">
           
-          <div class="w-full md:w-2/5 h-64 md:h-auto bg-emerald-100 border-b-4 md:border-b-0 md:border-r-4 border-black overflow-hidden relative">
+          <div class="w-full md:w-2/5 h-48 sm:h-64 md:h-auto bg-emerald-100 border-b-4 md:border-b-0 md:border-r-4 border-black overflow-hidden relative">
             
             <div class="absolute inset-0 p-4 flex items-center justify-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 z-10">
               <img src="sqa_collageMain.png" alt="QA Deliverables Collage" class="h-full object-contain">
@@ -307,26 +300,26 @@
 
           </div>
           
-          <div class="w-full md:w-3/5 p-8 flex flex-col flex-grow">
-            <h4 class="text-2xl md:text-3xl font-extrabold mb-4 bg-white inline-block px-2 border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] self-start">OrangeHRM RBAC Testing Suite</h4>
-            <p class="text-lg font-medium mb-6 flex-grow text-gray-700">
+          <div class="w-full md:w-3/5 p-6 md:p-8 flex flex-col flex-grow">
+            <h4 class="text-xl md:text-3xl font-extrabold mb-4 bg-white inline-block px-2 border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] self-start">OrangeHRM RBAC Testing Suite</h4>
+            <p class="text-base md:text-lg font-medium mb-6 flex-grow text-gray-700">
              This project demonstrates end-to-end software quality assurance methodologies applied to a live enterprise application. By systematically testing the Role-Based Access Control (RBAC) of OrangeHRM, I developed a comprehensive Role Requirements Matrix, a structured Test Execution Log, and a formal Defect Report. The suite specifically highlights my ability to perform rigorous functional testing, negative security testing and professional bug documentation to maintain high-quality production standards.
             </p>
             
             <div class="border-t-4 border-black pt-6 mt-auto">
-              <span class="font-black uppercase tracking-widest text-sm mb-4 block">PROJECT DELIVERABLES:</span>
+              <span class="font-black uppercase tracking-widest text-xs md:text-sm mb-4 block">PROJECT DELIVERABLES:</span>
               
-              <div class="flex flex-wrap gap-4">
+              <div class="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4">
                 
-                <a href="OrangeHRM's - Role Requirements Matrix.pdf" target="_blank" class="font-bold text-sm bg-[#fbcfe8] hover:bg-black hover:text-white transition-colors border-2 border-black px-4 py-2 flex items-center gap-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]">
+                <a href="OrangeHRM's - Role Requirements Matrix.pdf" target="_blank" class="font-bold text-xs md:text-sm bg-[#fbcfe8] hover:bg-black hover:text-white transition-colors border-2 border-black px-3 md:px-4 py-2 flex items-center justify-center gap-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]">
                   📄 Requirements Matrix
                 </a>
                 
-                <a href="OrangeHRM's RBAC - Test Execution Log.pdf" target="_blank" class="font-bold text-sm bg-[#a2c2f5] hover:bg-black hover:text-white transition-colors border-2 border-black px-4 py-2 flex items-center gap-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]">
+                <a href="OrangeHRM's RBAC - Test Execution Log.pdf" target="_blank" class="font-bold text-xs md:text-sm bg-[#a2c2f5] hover:bg-black hover:text-white transition-colors border-2 border-black px-3 md:px-4 py-2 flex items-center justify-center gap-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]">
                   📊 Test Execution Log
                 </a>
                 
-                <a href="Defect Bug Report  - Muhammad Kaif.pdf" target="_blank" class="font-bold text-sm bg-[#fef08a] hover:bg-black hover:text-white transition-colors border-2 border-black px-4 py-2 flex items-center gap-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]">
+                <a href="Defect Bug Report  - Muhammad Kaif.pdf" target="_blank" class="font-bold text-xs md:text-sm bg-[#fef08a] hover:bg-black hover:text-white transition-colors border-2 border-black px-3 md:px-4 py-2 flex items-center justify-center gap-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]">
                   🐛 Defect Bug Report
                 </a>
                 
@@ -340,129 +333,102 @@
 
   </section>
 
-<!-- Spacer -->
+  <div class="h-16 md:h-24 w-full border-t-4 border-black my-12 md:my-16"></div>
 
-  <div class="h-24 w-full border-t-4 border-black my-16"></div>
-
-  <!-- Certifications Section -->
-  <section id="certifications" class="p-12 max-w-7xl mx-auto relative mt-8">
+  <section id="certifications" class="px-6 py-10 md:p-12 max-w-7xl mx-auto relative mt-8">
     
-    <!-- Top Right Decorative Asset -->
-    <img src="spike orange.png" alt="Decoration" class="absolute -top-12 right-4 md:right-12 w-20 md:w-28 z-0 pointer-events-none opacity-50">
+    <img src="spike orange.png" alt="Decoration" class="absolute -top-8 right-2 md:-top-12 md:right-12 w-16 md:w-28 z-0 pointer-events-none opacity-50">
 
-    <!-- Certifications Header -->
-    <div class="mb-12 relative inline-block mt-4">
-      <!-- Top Left Star Decoration -->
-      <img src="Vector-1 star.png" alt="Star" class="absolute -top-12 -left-10 w-12 md:w-16 pointer-events-none">
+    <div class="mb-10 md:mb-12 relative inline-block mt-4">
+      <img src="Vector-1 star.png" alt="Star" class="absolute -top-10 -left-6 md:-top-12 md:-left-10 w-10 md:w-16 pointer-events-none">
       
-      <h2 class="text-4xl md:text-5xl font-black uppercase inline-block bg-purple-200 border-4 border-black px-6 py-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] -rotate-1 relative z-10">CERTIFICATIONS</h2>
+      <h2 class="text-3xl md:text-5xl font-black uppercase inline-block bg-purple-200 border-4 border-black px-4 md:px-6 py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] md:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] -rotate-1 relative z-10">CERTIFICATIONS</h2>
     </div>
 
-    <!-- Certifications Grid (Now 3 Columns on Large Screens!) -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 relative z-10">
       
-      <!-- Certificate Ticket 1: AWS Cloud -->
-      <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all flex flex-col group relative overflow-hidden">
-        
-        <!-- Decorative Top Bar -->
-        <div class="h-8 border-b-4 border-black bg-orange-300 w-full flex items-center px-4 space-x-2">
-            <div class="w-3 h-3 bg-black rounded-full"></div>
-            <div class="w-3 h-3 bg-black rounded-full"></div>
-            <div class="w-3 h-3 bg-black rounded-full"></div>
+      <div class="bg-white border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] md:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] md:hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all flex flex-col group relative overflow-hidden">
+        <div class="h-6 md:h-8 border-b-4 border-black bg-orange-300 w-full flex items-center px-4 space-x-2">
+            <div class="w-2 h-2 md:w-3 md:h-3 bg-black rounded-full"></div>
+            <div class="w-2 h-2 md:w-3 md:h-3 bg-black rounded-full"></div>
+            <div class="w-2 h-2 md:w-3 md:h-3 bg-black rounded-full"></div>
         </div>
         
-        <div class="p-8 flex flex-col flex-grow relative">
-          <!-- Background Watermark -->
-          <svg class="absolute -right-4 -bottom-4 w-40 h-40 text-gray-100 opacity-60 z-0 pointer-events-none group-hover:scale-110 transition-transform duration-500" fill="currentColor" viewBox="0 0 24 24"><path d="M17.5 19C19.9853 19 22 16.9853 22 14.5C22 12.1332 20.177 10.2031 17.8687 10.0157C17.4328 6.61868 14.537 4 11 4C7.13401 4 4 7.13401 4 11C4 11.1368 4.00392 11.2727 4.01166 11.4074C2.28186 12.0163 1 13.6558 1 15.5C1 17.9853 3.01472 20 5.5 20H17.5V19Z"/></svg>
+        <div class="p-6 md:p-8 flex flex-col flex-grow relative">
+          <svg class="absolute -right-4 -bottom-4 w-32 h-32 md:w-40 md:h-40 text-gray-100 opacity-60 z-0 pointer-events-none group-hover:scale-110 transition-transform duration-500" fill="currentColor" viewBox="0 0 24 24"><path d="M17.5 19C19.9853 19 22 16.9853 22 14.5C22 12.1332 20.177 10.2031 17.8687 10.0157C17.4328 6.61868 14.537 4 11 4C7.13401 4 4 7.13401 4 11C4 11.1368 4.00392 11.2727 4.01166 11.4074C2.28186 12.0163 1 13.6558 1 15.5C1 17.9853 3.01472 20 5.5 20H17.5V19Z"/></svg>
 
-          <!-- Content -->
           <div class="relative z-10">
-            <div class="border-2 border-black inline-block px-3 py-1 bg-orange-200 font-bold uppercase tracking-wider text-sm mb-4 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Cloud Infrastructure</div>
-            <h3 class="text-2xl md:text-3xl font-extrabold mb-2 leading-tight">AWS Cloud Technical Essentials</h3>
-            <p class="text-lg font-bold text-gray-600 mb-8">Amazon Web Services (via Coursera)</p>
+            <div class="border-2 border-black inline-block px-2 md:px-3 py-1 bg-orange-200 font-bold uppercase tracking-wider text-xs md:text-sm mb-4 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Cloud Infrastructure</div>
+            <h3 class="text-xl md:text-3xl font-extrabold mb-2 leading-tight">AWS Cloud Technical Essentials</h3>
+            <p class="text-base md:text-lg font-bold text-gray-600 mb-6 md:mb-8">Amazon Web Services (via Coursera)</p>
           </div>
 
-          <!-- Footer Area -->
-          <div class="mt-auto border-t-4 border-dashed border-black pt-6 flex flex-col 2xl:flex-row 2xl:items-center justify-between gap-4 relative z-10">
+          <div class="mt-auto border-t-4 border-dashed border-black pt-4 md:pt-6 flex flex-row items-center justify-between gap-4 relative z-10">
             <div class="flex flex-col">
-              <span class="text-xs font-black uppercase tracking-widest text-gray-500 mb-1">Issue Date</span>
-              <span class="text-xl font-black uppercase text-black">Mar 1, 2025</span>
+              <span class="text-[10px] md:text-xs font-black uppercase tracking-widest text-gray-500 mb-1">Issue Date</span>
+              <span class="text-base md:text-xl font-black uppercase text-black">Mar 1, 2025</span>
             </div>
-            <a href="https://coursera.org/verify/QIJXW5FGKQPO" target="_blank" class="inline-block bg-black text-white px-5 py-2 text-center font-bold uppercase tracking-wider hover:bg-orange-300 hover:text-black border-2 border-transparent hover:border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
+            <a href="https://coursera.org/verify/QIJXW5FGKQPO" target="_blank" class="inline-block bg-black text-white px-4 md:px-5 py-2 text-center text-sm md:text-base font-bold uppercase tracking-wider hover:bg-orange-300 hover:text-black border-2 border-transparent hover:border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
               Verify
             </a>
           </div>
         </div>
       </div>
 
-      <!-- Certificate Ticket 2: IBM Containers -->
-      <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all flex flex-col group relative overflow-hidden">
-        
-        <!-- Decorative Top Bar -->
-        <div class="h-8 border-b-4 border-black bg-blue-300 w-full flex items-center px-4 space-x-2">
-            <div class="w-3 h-3 bg-black rounded-full"></div>
-            <div class="w-3 h-3 bg-black rounded-full"></div>
-            <div class="w-3 h-3 bg-black rounded-full"></div>
+      <div class="bg-white border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] md:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] md:hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all flex flex-col group relative overflow-hidden">
+        <div class="h-6 md:h-8 border-b-4 border-black bg-blue-300 w-full flex items-center px-4 space-x-2">
+            <div class="w-2 h-2 md:w-3 md:h-3 bg-black rounded-full"></div>
+            <div class="w-2 h-2 md:w-3 md:h-3 bg-black rounded-full"></div>
+            <div class="w-2 h-2 md:w-3 md:h-3 bg-black rounded-full"></div>
         </div>
         
-        <div class="p-8 flex flex-col flex-grow relative">
-          <!-- Background Watermark -->
-          <svg class="absolute -right-4 -bottom-4 w-40 h-40 text-gray-100 opacity-60 z-0 pointer-events-none group-hover:scale-110 transition-transform duration-500" fill="currentColor" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16zM12 22.08L12 12M3.27 6.96L12 12.01L20.73 6.96"/></svg>
+        <div class="p-6 md:p-8 flex flex-col flex-grow relative">
+          <svg class="absolute -right-4 -bottom-4 w-32 h-32 md:w-40 md:h-40 text-gray-100 opacity-60 z-0 pointer-events-none group-hover:scale-110 transition-transform duration-500" fill="currentColor" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16zM12 22.08L12 12M3.27 6.96L12 12.01L20.73 6.96"/></svg>
 
-          <!-- Content -->
           <div class="relative z-10">
-            <div class="border-2 border-black inline-block px-3 py-1 bg-blue-200 font-bold uppercase tracking-wider text-sm mb-4 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">DevOps & Containers</div>
-            <h3 class="text-2xl md:text-3xl font-extrabold mb-2 leading-tight">Intro to Containers w/ Docker & K8s</h3>
-            <p class="text-lg font-bold text-gray-600 mb-8">IBM (via Coursera)</p>
+            <div class="border-2 border-black inline-block px-2 md:px-3 py-1 bg-blue-200 font-bold uppercase tracking-wider text-xs md:text-sm mb-4 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">DevOps & Containers</div>
+            <h3 class="text-xl md:text-3xl font-extrabold mb-2 leading-tight">Intro to Containers w/ Docker & K8s</h3>
+            <p class="text-base md:text-lg font-bold text-gray-600 mb-6 md:mb-8">IBM (via Coursera)</p>
           </div>
 
-          <!-- Footer Area -->
-          <div class="mt-auto border-t-4 border-dashed border-black pt-6 flex flex-col 2xl:flex-row 2xl:items-center justify-between gap-4 relative z-10">
+          <div class="mt-auto border-t-4 border-dashed border-black pt-4 md:pt-6 flex flex-row items-center justify-between gap-4 relative z-10">
             <div class="flex flex-col">
-              <span class="text-xs font-black uppercase tracking-widest text-gray-500 mb-1">Issue Date</span>
-              <span class="text-xl font-black uppercase text-black">Jan 20, 2025</span>
+              <span class="text-[10px] md:text-xs font-black uppercase tracking-widest text-gray-500 mb-1">Issue Date</span>
+              <span class="text-base md:text-xl font-black uppercase text-black">Jan 20, 2025</span>
             </div>
-            <a href="https://coursera.org/verify/X4SE3X9R7ABJ" target="_blank" class="inline-block bg-black text-white px-5 py-2 text-center font-bold uppercase tracking-wider hover:bg-blue-300 hover:text-black border-2 border-transparent hover:border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
+            <a href="https://coursera.org/verify/X4SE3X9R7ABJ" target="_blank" class="inline-block bg-black text-white px-4 md:px-5 py-2 text-center text-sm md:text-base font-bold uppercase tracking-wider hover:bg-blue-300 hover:text-black border-2 border-transparent hover:border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
               Verify
             </a>
           </div>
         </div>
       </div>
 
-      <!-- Certificate Ticket 3: NSCT -->
-      <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all flex flex-col group relative overflow-hidden">
-        
-        <!-- Decorative Top Bar -->
-        <div class="h-8 border-b-4 border-black bg-[#a2f5d6] w-full flex items-center px-4 space-x-2">
-            <div class="w-3 h-3 bg-black rounded-full"></div>
-            <div class="w-3 h-3 bg-black rounded-full"></div>
-            <div class="w-3 h-3 bg-black rounded-full"></div>
+      <div class="bg-white border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] md:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] md:hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all flex flex-col group relative overflow-hidden">
+        <div class="h-6 md:h-8 border-b-4 border-black bg-[#a2f5d6] w-full flex items-center px-4 space-x-2">
+            <div class="w-2 h-2 md:w-3 md:h-3 bg-black rounded-full"></div>
+            <div class="w-2 h-2 md:w-3 md:h-3 bg-black rounded-full"></div>
+            <div class="w-2 h-2 md:w-3 md:h-3 bg-black rounded-full"></div>
         </div>
         
-        <div class="p-8 flex flex-col flex-grow relative">
-          <!-- Background Watermark -->
-          <svg class="absolute -right-4 -bottom-4 w-40 h-40 text-gray-100 opacity-60 z-0 pointer-events-none group-hover:scale-110 transition-transform duration-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 15.2l-4.2 2.2a1 1 0 0 1-1.5-1.1l.8-4.7-3.4-3.3a1 1 0 0 1 .6-1.7l4.7-.7 2.1-4.3a1 1 0 0 1 1.8 0l2.1 4.3 4.7.7a1 1 0 0 1 .6 1.7l-3.4 3.3.8 4.7a1 1 0 0 1-1.5 1.1L12 15.2z"/></svg>
+        <div class="p-6 md:p-8 flex flex-col flex-grow relative">
+          <svg class="absolute -right-4 -bottom-4 w-32 h-32 md:w-40 md:h-40 text-gray-100 opacity-60 z-0 pointer-events-none group-hover:scale-110 transition-transform duration-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 15.2l-4.2 2.2a1 1 0 0 1-1.5-1.1l.8-4.7-3.4-3.3a1 1 0 0 1 .6-1.7l4.7-.7 2.1-4.3a1 1 0 0 1 1.8 0l2.1 4.3 4.7.7a1 1 0 0 1 .6 1.7l-3.4 3.3.8 4.7a1 1 0 0 1-1.5 1.1L12 15.2z"/></svg>
 
-          <!-- Content -->
           <div class="relative z-10">
-            <div class="flex items-center gap-3 mb-4">
-              <div class="border-2 border-black inline-block px-3 py-1 bg-emerald-200 font-bold uppercase tracking-wider text-sm shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Professional</div>
-              <!-- Percentile Badge -->
-              <div class="border-2 border-black inline-block px-2 py-1 bg-yellow-200 font-black text-sm shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">75.7% Percentile</div>
+            <div class="flex flex-wrap items-center gap-2 md:gap-3 mb-4">
+              <div class="border-2 border-black inline-block px-2 md:px-3 py-1 bg-emerald-200 font-bold uppercase tracking-wider text-xs md:text-sm shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Professional</div>
+              <div class="border-2 border-black inline-block px-2 py-1 bg-yellow-200 font-black text-xs md:text-sm shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">75.7% Percentile</div>
             </div>
-            <h3 class="text-2xl md:text-3xl font-extrabold mb-2 leading-tight">National Skill Competency Test (NSCT)</h3>
-            <p class="text-lg font-bold text-gray-600 mb-8">IT Graduates Evaluation</p>
+            <h3 class="text-xl md:text-3xl font-extrabold mb-2 leading-tight">National Skill Competency Test (NSCT)</h3>
+            <p class="text-base md:text-lg font-bold text-gray-600 mb-6 md:mb-8">IT Graduates Evaluation</p>
           </div>
 
-          <!-- Footer Area -->
-          <div class="mt-auto border-t-4 border-dashed border-black pt-6 flex flex-col 2xl:flex-row 2xl:items-center justify-between gap-4 relative z-10">
+          <div class="mt-auto border-t-4 border-dashed border-black pt-4 md:pt-6 flex flex-row items-center justify-between gap-4 relative z-10">
             <div class="flex flex-col">
-              <span class="text-xs font-black uppercase tracking-widest text-gray-500 mb-1">Test Date</span>
-              <span class="text-xl font-black uppercase text-black">Apr 05, 2026</span>
+              <span class="text-[10px] md:text-xs font-black uppercase tracking-widest text-gray-500 mb-1">Test Date</span>
+              <span class="text-base md:text-xl font-black uppercase text-black">Apr 05, 2026</span>
             </div>
-            <!-- Ensure you save your NSCT PDF as 'NSCT_Result.pdf' in your project folder -->
-            <a href="NSCT_Result.pdf" target="_blank" class="inline-block bg-black text-white px-5 py-2 text-center font-bold uppercase tracking-wider hover:bg-[#a2f5d6] hover:text-black border-2 border-transparent hover:border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
-              View Result
+            <a href="NSCT_Result.pdf" target="_blank" class="inline-block bg-black text-white px-4 md:px-5 py-2 text-center text-sm md:text-base font-bold uppercase tracking-wider hover:bg-[#a2f5d6] hover:text-black border-2 border-transparent hover:border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">
+              Result
             </a>
           </div>
         </div>
@@ -470,79 +436,58 @@
 
     </div>
   </section>
-<!-- Contact Section -->
-  <section id="contact" class="bg-[#a2f5d6] border-t-4 border-b-4 border-black pt-24 pb-16 flex flex-col justify-between relative overflow-hidden">
-    
-    <!-- Top Left Concentric Circles (New Asset) -->
-    <img src="contact1.png" alt="Concentric Circles" class="absolute top-8 left-0 w-16 md:w-24 pointer-events-none">
-    
-    <!-- Top Right Sad Face -->
-    <img src="emoji annoyed.png" alt="Sad Face" class="absolute top-12 right-8 md:right-16 w-24 md:w-32 pointer-events-none hover:scale-110 transition-transform">
 
-    <!-- Bottom Left Happy Face (Moved from Top Left) -->
-    <img src="emoji smilely face.png" alt="Happy Face" class="absolute bottom-12 left-8 md:left-16 w-24 md:w-32 pointer-events-none hover:scale-110 transition-transform">
+  <section id="contact" class="bg-[#a2f5d6] border-t-4 border-b-4 border-black pt-16 md:pt-24 pb-12 md:pb-16 flex flex-col justify-between relative overflow-hidden mt-16">
     
-    <!-- Bottom Right 4-Circle Pattern (Replaced Gray Flower) -->
-    <img src="contact2.png" alt="4 Circle Pattern" class="absolute bottom-12 right-8 md:right-16 w-16 md:w-24 pointer-events-none">
+    <img src="contact1.png" alt="Concentric Circles" class="absolute top-4 left-0 md:top-8 w-12 md:w-24 pointer-events-none">
+    <img src="emoji annoyed.png" alt="Sad Face" class="absolute top-8 right-4 md:top-12 md:right-16 w-16 md:w-32 pointer-events-none hover:scale-110 transition-transform">
+    <img src="emoji smilely face.png" alt="Happy Face" class="absolute bottom-8 left-4 md:bottom-12 md:left-16 w-16 md:w-32 pointer-events-none hover:scale-110 transition-transform hidden sm:block">
+    <img src="contact2.png" alt="4 Circle Pattern" class="absolute bottom-8 right-4 md:bottom-12 md:right-16 w-12 md:w-24 pointer-events-none">
 
-    <!-- Outer wrapper for the staircase staggering -->
-    <div class="flex flex-col space-y-12 z-10 w-full max-w-4xl mx-auto px-4 mt-8">
+    <div class="flex flex-col space-y-10 md:space-y-12 z-10 w-full max-w-4xl mx-auto px-4 mt-8">
       
-      <!-- Card 1: Header (Staggered Left) -->
       <div class="self-center md:self-start md:ml-12 cursor-default -rotate-2">
-        <div class="bg-[#e5e7eb] border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] px-12 py-6 rounded-xl">
-          <h2 class="text-4xl md:text-5xl font-black uppercase tracking-widest">GET IN TOUCH:</h2>
+        <div class="bg-[#e5e7eb] border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] md:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] px-6 py-4 md:px-12 md:py-6 rounded-xl">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-widest text-center md:text-left">GET IN TOUCH:</h2>
         </div>
       </div>
 
-      <!-- Card 2: Socials (Centered) -->
-      <div class="self-center z-20">
-        <div class="bg-[#fbcfe8] border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] px-6 py-8 md:px-16 md:py-10 rounded-xl rotate-1">
-          <div class="flex flex-wrap justify-center gap-6 md:gap-8 items-center">
+      <div class="self-center z-20 w-full sm:w-auto">
+        <div class="bg-[#fbcfe8] border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] md:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] px-4 py-6 sm:px-6 sm:py-8 md:px-16 md:py-10 rounded-xl rotate-1">
+          <div class="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 items-center">
             
-            <!-- Discord Icon -->
-            <a href="https://discordapp.com/users/999330227564056577" target="_blank" class="bg-white border-4 border-black p-3 rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[0px_0px_0px_0px_rgba(0,0,0,1)] hover:-rotate-6 transition-all group">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" class="group-hover:scale-110 transition-transform text-black">
+            <a href="https://discordapp.com/users/999330227564056577" target="_blank" class="bg-white border-4 border-black p-2 md:p-3 rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[0px_0px_0px_0px_rgba(0,0,0,1)] hover:-rotate-6 transition-all group">
+              <svg class="w-8 h-8 md:w-12 md:h-12 group-hover:scale-110 transition-transform text-black" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
               </svg>
             </a>
             
-            <!-- GitHub Logo -->
-            <a href="https://github.com/Muhammad-Kaif-leghari?tab=repositories" target="_blank" class="bg-white border-4 border-black p-3 rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[0px_0px_0px_0px_rgba(0,0,0,1)] hover:rotate-6 transition-all group">
-              <img src="github2.png" alt="GitHub" class="w-12 h-12 object-contain group-hover:scale-110 transition-transform">
+            <a href="https://github.com/Muhammad-Kaif-leghari?tab=repositories" target="_blank" class="bg-white border-4 border-black p-2 md:p-3 rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[0px_0px_0px_0px_rgba(0,0,0,1)] hover:rotate-6 transition-all group">
+              <img src="github2.png" alt="GitHub" class="w-8 h-8 md:w-12 md:h-12 object-contain group-hover:scale-110 transition-transform">
             </a>
             
-            <!-- LinkedIn Logo -->
-            <a href="https://www.linkedin.com/in/muhammad-kaif-leghari/" target="_blank" class="bg-white border-4 border-black p-3 rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[0px_0px_0px_0px_rgba(0,0,0,1)] hover:-rotate-6 transition-all group">
-              <img src="updated linkedin.png" alt="LinkedIn" class="w-12 h-12 object-contain group-hover:scale-110 transition-transform">
+            <a href="https://www.linkedin.com/in/muhammad-kaif-leghari/" target="_blank" class="bg-white border-4 border-black p-2 md:p-3 rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[0px_0px_0px_0px_rgba(0,0,0,1)] hover:-rotate-6 transition-all group">
+              <img src="updated linkedin.png" alt="LinkedIn" class="w-8 h-8 md:w-12 md:h-12 object-contain group-hover:scale-110 transition-transform">
             </a>
             
-            <!-- Email/@ Logo -->
-            <a href="mailto:muhammadkaifleghari@gmail.com" class="bg-white border-4 border-black p-3 rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[0px_0px_0px_0px_rgba(0,0,0,1)] hover:rotate-6 transition-all group">
-              <img src="mail.png" alt="Email" class="w-12 h-12 object-contain mix-blend-multiply group-hover:scale-110 transition-transform">
+            <a href="mailto:muhammadkaifleghari@gmail.com" class="bg-white border-4 border-black p-2 md:p-3 rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[0px_0px_0px_0px_rgba(0,0,0,1)] hover:rotate-6 transition-all group">
+              <img src="mail.png" alt="Email" class="w-8 h-8 md:w-12 md:h-12 object-contain mix-blend-multiply group-hover:scale-110 transition-transform">
             </a>
 
           </div>
         </div>
       </div>
 
-      <!-- Card 3: CV Download (Staggered Right) -->
       <div class="self-center md:self-end md:mr-16 relative mt-4">
         
-        <!-- Triangle Pointer -->
-        <img src="arrow, hand drawn, scribble, doodle 46.png" alt="Pointer" class="absolute -left-20 md:-left-28 top-1/2 -translate-y-1/2 w-20 md:w-24 pointer-events-none">
+        <img src="arrow, hand drawn, scribble, doodle 46.png" alt="Pointer" class="hidden md:block absolute -left-28 top-1/2 -translate-y-1/2 w-24 pointer-events-none">
 
-        <!-- CV Button -->
-        <div class="bg-[#10b981] border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all px-8 py-6 rounded-xl group cursor-pointer relative z-10 -rotate-1">
-          <!-- Removed 'download', added 'target="_blank"' -->
-          <a href="M_Kaif_Resume_2026.pdf" target="_blank" class="text-black flex items-center gap-5">
-            <!-- You can change this text to "View My Resume" if you prefer! -->
-            <span class="text-2xl md:text-3xl font-black uppercase tracking-wide">Download My Resume</span>
+        <div class="bg-[#10b981] border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] md:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all px-4 py-4 md:px-8 md:py-6 rounded-xl group cursor-pointer relative z-10 -rotate-1">
+          <a href="M_Kaif_Resume_2026.pdf" target="_blank" class="text-black flex items-center gap-3 md:gap-5">
+            <span class="text-lg sm:text-xl md:text-3xl font-black uppercase tracking-wide">Download My Resume</span>
             
-            <!-- Added a white box around the arrow to make it pop inside the green button -->
-            <div class="bg-white border-4 border-black rounded-lg p-1">
-              <!-- Swapped to a diagonal "open in new tab" arrow -->
-              <svg class="w-8 h-8 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <div class="bg-white border-2 md:border-4 border-black rounded-lg p-1">
+              <svg class="w-6 h-6 md:w-8 md:h-8 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M7 17L17 7M17 7H7M17 7V17"></path>
               </svg>
             </div>
@@ -552,34 +497,49 @@
 
     </div>
 
-    <!-- Page Footer / Copyright Badge -->
-    <div class="w-full flex justify-center mt-32 z-10">
-        <div class="bg-white border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] px-8 py-3 rounded-full -rotate-1">
-            <p class="font-black uppercase tracking-widest text-sm md:text-base">Designed & Built by Muhammad Kaif &copy; 2026</p>
+    <div class="w-full flex justify-center mt-20 md:mt-32 z-10 px-4">
+        <div class="bg-white border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] px-4 py-2 md:px-8 md:py-3 rounded-full -rotate-1 text-center">
+            <p class="font-black uppercase tracking-widest text-[10px] sm:text-xs md:text-base">Designed & Built by Muhammad Kaif &copy; 2026</p>
         </div>
     </div>
 
   </section>
   
-  <!-- Add minimal interaction script here -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+        // Publication Accordion Logic
         const trigger = document.getElementById('publicationTrigger');
         const content = document.getElementById('publicationContent');
         const arrow = document.getElementById('publicationArrow');
 
         if (trigger && content && arrow) {
             trigger.addEventListener('click', () => {
-                // Check if the content is hidden
                 const isHidden = content.classList.contains('hidden');
-
                 if (isHidden) {
                     content.classList.remove('hidden');
-                    arrow.classList.add('rotate-180'); // Rotate the arrow
+                    arrow.classList.add('rotate-180');
                 } else {
                     content.classList.add('hidden');
-                    arrow.classList.remove('rotate-180'); // Reset arrow rotation
+                    arrow.classList.remove('rotate-180');
                 }
+            });
+        }
+
+        // Mobile Menu Logic
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close the menu when a link is clicked
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
             });
         }
     });
